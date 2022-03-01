@@ -1,0 +1,160 @@
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/functions";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// test part************************************************************************************************************************************************************************************************************************************************
+
+// h1{
+//     color: $second-color;
+//     @include test;
+// }
+
+// test part************************************************************************************************************************************************************************************************************************************************
+
+.all-page{
+    @include all-page;
+    height: 100vh;
+    margin: 0 auto;
+    
+}
+
+.playground{
+    background: linear-gradient($main-color, $second-color);
+    height: 90%;
+    width: 90%;
+    // border: 1px dotted $third-color;
+    border-radius: 10%;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.player0{
+    height: 80%;
+    width: 20%;
+    border: 2px solid $second-color;
+    background: black;
+    position: absolute;
+    left: 2%;
+    top: 10%;
+}
+
+.player1{
+    height: 80%;
+    width: 20%;
+    border: 2px solid $second-color;
+    background: black;
+    position: absolute;
+    right: 2%;
+    top: 10%;
+}
+
+.buttons{
+    height: 30%;
+    width: 40%;
+    // border: 2px solid red;
+    background: $main-color;
+    // position: absolute;
+    margin: 0 auto;
+    position: absolute;
+    
+    bottom: 2%;
+    right: 30%;
+}
+
+.button{
+    width: 40%;
+    height: 25%;
+    background: $second-color;
+    color: $third-color;
+    // border: 2px solid red;
+    display: block;
+    margin: 1% auto;
+    font-weight: bold;
+    // padding: 0.5%;
+    text-transform: uppercase;
+    border-radius: 30%;
+    font-size: 80%;
+}
+
+.button:hover{
+    background: lighten($color: purple, $amount: 10);
+    color: lighten($color: gold, $amount: 10);
+    cursor: pointer;
+}
+
+.field{
+    // background: lighten($color: $second-color, $amount: 10);
+    // border: 2px solid red;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    right: 35%;
+    top: 20%;
+    
+}
+
+.player1 p{
+    text-align: center;
+    color: $third-color;
+    // border: 3px solid green;
+    margin: 5%;
+    // font-weight: bold;
+}
+
+.player1 p:nth-of-type(2){
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.player0 p{
+    text-align: center;
+    color: $third-color;
+    // border: 3px solid green;
+    margin: 5%;
+    // font-weight: bold;
+
+}
+
+.player0 p:nth-of-type(2){
+    font-weight: bold;
+    font-size: 150%;
+}
+
+#statement0, #statement1{
+    color: $third-color;
+}
+
+
+#currentScorePlayer1, #currentScorePlayer0{
+    font-size: 120%;
+}
+
+
+#ourCube{
+    border: 2px solid black;
+    display: block;
+    margin: 10% auto;
+    height: 60%;
+    // position: absolute;
+    // right: 14%;
+}
+
+
+// active player
+
+.active{
+    border: 3px solid $third-color;
+}
+
+
+
+
+

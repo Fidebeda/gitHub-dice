@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.all-page {
+  background: -webkit-gradient(linear, left top, left bottom, from(purple), to(black));
+  background: linear-gradient(purple, black);
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.playground {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(purple));
+  background: linear-gradient(black, purple);
+  height: 90%;
+  width: 90%;
+  border-radius: 10%;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.player0 {
+  height: 80%;
+  width: 20%;
+  border: 2px solid purple;
+  background: black;
+  position: absolute;
+  left: 2%;
+  top: 10%;
+}
+
+.player1 {
+  height: 80%;
+  width: 20%;
+  border: 2px solid purple;
+  background: black;
+  position: absolute;
+  right: 2%;
+  top: 10%;
+}
+
+.buttons {
+  height: 30%;
+  width: 40%;
+  background: black;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 2%;
+  right: 30%;
+}
+
+.button {
+  width: 40%;
+  height: 25%;
+  background: purple;
+  color: gold;
+  display: block;
+  margin: 1% auto;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 30%;
+  font-size: 80%;
+}
+
+.button:hover {
+  background: #b300b3;
+  color: #ffdf33;
+  cursor: pointer;
+}
+
+.field {
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  right: 35%;
+  top: 20%;
+}
+
+.player1 p {
+  text-align: center;
+  color: gold;
+  margin: 5%;
+}
+
+.player1 p:nth-of-type(2) {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.player0 p {
+  text-align: center;
+  color: gold;
+  margin: 5%;
+}
+
+.player0 p:nth-of-type(2) {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+#statement0, #statement1 {
+  color: gold;
+}
+
+#currentScorePlayer1, #currentScorePlayer0 {
+  font-size: 120%;
+}
+
+#ourCube {
+  border: 2px solid black;
+  display: block;
+  margin: 10% auto;
+  height: 60%;
+}
+
+.active {
+  border: 3px solid gold;
+}
+/*# sourceMappingURL=style-cubeGame.css.map */
